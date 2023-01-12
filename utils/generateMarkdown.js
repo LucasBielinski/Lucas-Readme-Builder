@@ -1,8 +1,15 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (!license) {
-    return "";
+  switch (license) {
+    case "MIT":
+      return "https://img.shields.io/badge/License-MIT-yellow.svg";
+    case "GNU GPLv3":
+      return "https://img.shields.io/badge/License-MIT-yellow.svg";
+    case "Apache License 2.0":
+      return "https://img.shields.io/badge/License-MIT-yellow.svg";
+    default:
+      return "";
   }
 }
 
@@ -24,8 +31,51 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.project}
+  
+${renderLicenseBadge(data.license)}
+  
+## Description
+${data.description}
 
+## Table of Contents
+If your README is long, add a table of contents to make it easy for users to find what they need.
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+${data.install}
+
+## Usage
+${data.use}
+
+## Credits
+${data.credits}
+
+## License
+![${data.license}] (${badge})
+
+## Badges
+${data.badges}
+
+## Features
+${data.features}
+
+## How to Contribute
+${data.contribution}
+
+
+## Tests
+${data.test}
+
+## Questions
+For any questions, you can reach me here:
+
+[My Github] (${data.GitHub})
+or at ${data.email}
 `;
 }
 

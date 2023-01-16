@@ -37,11 +37,6 @@ const questions = [
   },
   {
     type: "input",
-    message: "add any badges you would like",
-    name: "badges",
-  },
-  {
-    type: "input",
     message: "what features does your project have?",
     name: "features",
   },

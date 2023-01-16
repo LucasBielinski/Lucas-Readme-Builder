@@ -35,17 +35,17 @@ function renderLicenseSection(license) {
     case "MIT":
       return (
         header +
-        `This program is covered by the ${license} license. THE MIT is.....`
+        `This program is covered by the ${license} license. The MIT license allows users to reuse code for any purpose as long as orginal MIT license is included`
       );
     case "GNU GPLv3":
       return (
         header +
-        `This program is covered by the ${license} license. THE GNU is.....`
+        `This program is covered by the ${license} license. The GNU license allows users to share and modify a project without paying, but it must remain unde this license.`
       );
     case "Apache License 2.0":
       return (
         header +
-        `This program is covered by the ${license} license. THE MIT is.....`
+        `This program is covered by the ${license} license. The Apache license allows users to reuse code for any purpose, but users must disclose if changes are made to the source code.`
       );
     default:
       return "";
@@ -79,9 +79,6 @@ ${data.use}
 ${data.credits}
 
 ${renderLicenseSection(data.license)}
-
-## Badges
-${data.badges}
 
 ## Features
 ${data.features}

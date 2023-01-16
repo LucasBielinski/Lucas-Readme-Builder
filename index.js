@@ -33,7 +33,7 @@ const questions = [
     type: "checkbox",
     message: "please choose a license",
     name: "license",
-    choices: ["MIT", "GNU GPLv3", "Apache License 2.0"],
+    choices: ["MIT", "GNU GPLv3", "Apache License 2.0", "None"],
   },
   {
     type: "input",
@@ -78,6 +78,9 @@ function writeToFile(title, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then((answers) => {
+    console.log(answers);
+    answers.license = answers.license[0];
+    console.log(answers);
     writeToFile(answers.project, answers);
   });
 }

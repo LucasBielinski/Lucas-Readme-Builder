@@ -1,13 +1,15 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  console.log("Rendering lIcense badge");
+  console.log(license);
   switch (license) {
     case "MIT":
-      return "https://img.shields.io/badge/License-MIT-yellow.svg";
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
     case "GNU GPLv3":
-      return "https://img.shields.io/badge/License-MIT-yellow.svg";
+      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
     case "Apache License 2.0":
-      return "https://img.shields.io/badge/License-MIT-yellow.svg";
+      return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
     default:
       return "";
   }
@@ -19,6 +21,7 @@ function renderLicenseLink(license) {
   if (!license) {
     return "";
   }
+  return `- [License](#license)`;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -26,6 +29,26 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (!license) {
     return "";
+  }
+  var header = `## License \n`;
+  switch (license) {
+    case "MIT":
+      return (
+        header +
+        `This program is covered by the ${license} license. THE MIT is.....`
+      );
+    case "GNU GPLv3":
+      return (
+        header +
+        `This program is covered by the ${license} license. THE GNU is.....`
+      );
+    case "Apache License 2.0":
+      return (
+        header +
+        `This program is covered by the ${license} license. THE MIT is.....`
+      );
+    default:
+      return "";
   }
 }
 
@@ -44,7 +67,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
+${renderLicenseLink(data.license)}
 
 ## Installation
 ${data.install}
@@ -55,8 +78,7 @@ ${data.use}
 ## Credits
 ${data.credits}
 
-## License
-![${data.license}] (${badge})
+${renderLicenseSection(data.license)}
 
 ## Badges
 ${data.badges}

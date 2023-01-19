@@ -81,7 +81,7 @@ function init() {
     // picks from license array
     answers.license = answers.license[0];
     console.log(answers);
-    // takes anwers from inquire
+    // takes answers from inquire
     writeToFile(answers.project, answers);
   });
 }

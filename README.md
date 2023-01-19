@@ -17,7 +17,8 @@ If your README is long, add a table of contents to make it easy for users to fin
 You must use node.js and inquirer when using this project.
 
 ## Usage
-Simply type "node index" in the treminal, you will then be presented with questions to fill out your README
+Simply type "node index" in the treminal, you will then be presented with questions to fill out your README.
+https://drive.google.com/file/d/1rOhKsz-UboHhLHMQwhdh2AnlLnlHEswU/view
 
 ## Credits
 N/A

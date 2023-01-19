@@ -38,5 +38,5 @@ N/A
 ## Questions
 For any questions, you can reach me here:
 
-[My Github](https:github.com/LucasBielinski/)
+[My Github](https://github.com/LucasBielinski/)
 or at bielinskilucas@gmail.com

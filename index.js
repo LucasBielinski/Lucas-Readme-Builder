@@ -1,8 +1,9 @@
+// calls programs
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+// questions for user input
 const questions = [
   {
     type: "input",
@@ -62,20 +63,25 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// writes the read me file
 function writeToFile(title, data) {
+  // sets file name
   const fileName = `${title.toUpperCase()}.md`;
+  // takes in data from generat markdown
   fs.writeFile(fileName, generateMarkdown(data), (err) =>
     err ? console.log(err) : console.log("success")
   );
 }
 
-// TODO: Create a function to initialize app
+// intialize app
 function init() {
+  // calls answers
   inquirer.prompt(questions).then((answers) => {
     console.log(answers);
+    // picks from license array
     answers.license = answers.license[0];
     console.log(answers);
+    // takes anwers from inquire
     writeToFile(answers.project, answers);
   });
 }

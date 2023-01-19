@@ -93,7 +93,7 @@ ${data.test}
 ## Questions
 For any questions, you can reach me here:
 
-[My Github] (${data.GitHub})
+[My Github](${data.GitHub})
 or at ${data.email}
 `;
 }

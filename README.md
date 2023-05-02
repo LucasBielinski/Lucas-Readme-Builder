@@ -3,21 +3,17 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
 ## Description
-This is a READ ME generator, I created this project to simplify the process of building a README. This will help devolopers save time when creating READ ME`s
 
-## Table of Contents
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+This is a README generator. I created this project to simplify the process of building a README. This will help developers save time when creating a README, and hopefully it will take the strain off of developers when creating a new README. 
 
 ## Installation
+
 You must use node.js and inquirer when using this project.
 
 ## Usage
-Simply type "node index" in the treminal, you will then be presented with questions to fill out your README.
+
+Simply type "node index" in the terminal, you will then be presented with questions to fill out your README. You will be asked what you want in each section of your README and what kind of licenses you would like to use.
+
 
 ## Credits
 N/A
@@ -25,14 +21,7 @@ N/A
 ## License 
 This program is covered by the MIT license. The MIT license allows users to reuse code for any purpose as long as orginal MIT license is included
 
-## Features
-N/A
-
 ## How to Contribute
-N/A
-
-
-## Tests
 N/A
 
 ## Questions

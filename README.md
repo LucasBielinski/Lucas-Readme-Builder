@@ -16,16 +16,17 @@ Simply type "node index" in the terminal, you will then be presented with questi
 
 
 ## Credits
+
 N/A
 
 ## License 
+
 This program is covered by the MIT license. The MIT license allows users to reuse code for any purpose as long as orginal MIT license is included
 
 ## How to Contribute
-N/A
 
-## Questions
-For any questions, you can reach me here:
+For questions and contributions, you can reach me here:
+[Email](mailto:bielinskilucas@gmail.com)
+or
+[Github](https://github.com/LucasBielinski)
 
-[My Github](https://github.com/LucasBielinski/)
-or at bielinskilucas@gmail.com

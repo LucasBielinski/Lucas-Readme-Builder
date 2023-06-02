@@ -1,4 +1,4 @@
-# README GENERATOR
+# Lucas-Readme-Builder
   
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
@@ -6,9 +6,11 @@
 
 This is a README generator. I created this project to simplify the process of building a README. This will help developers save time when creating a README, and hopefully it will take the strain off of developers when creating a new README. 
 
+Technologies used: Node.js and Inquirer
+
 ## Installation
 
-You must use node.js and inquirer when using this project.
+You must use Node.js and Inquirer when using this project.
 
 ## Usage
 
